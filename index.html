@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>沖縄2泊3日・旅のしおり（同期7名）</title>
+<style>
+  :root{
+    --bg:#0f172a;          /* slate-900 */
+    --card:#111827;        /* gray-900 */
+    --muted:#334155;       /* slate-700 */
+    --text:#e5e7eb;        /* gray-200 */
+    --accent:#22d3ee;      /* cyan-400 */
+    --accent2:#a78bfa;     /* violet-400 */
+    --good:#34d399;        /* emerald-400 */
+    --warn:#fbbf24;        /* amber-400 */
+  }
+  html,body{height:100%;margin:0;background:radial-gradient(1200px 600px at 80% -20%, rgba(34,211,238,.15), transparent),
+                         radial-gradient(1000px 500px at -10% 110%, rgba(167,139,250,.14), transparent), var(--bg);
+             color:var(--text); font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+  .deck{position:relative; height:100%; overflow:hidden;}
+  .slide{position:absolute; inset:0; padding:54px 7vw 72px; display:none;}
+  .slide.active{display:block; animation:fade .35s ease}
+  @keyframes fade{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
+  .title{font-size:clamp(24px,4vw,44px); font-weight:800; letter-spacing:.2px; line-height:1.25}
+  .subtitle{opacity:.85; margin-top:8px; font-size:clamp(14px,2vw,18px)}
+  .grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:22px}
+  .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08);
+        border-radius:18px; padding:16px 18px; box-shadow: 0 10px 30px rgba(0,0,0,.25)}
+  h2{font-size:clamp(20px,3vw,28px); margin:0 0 10px; letter-spacing:.3px}
+  h3{font-size:clamp(16px,2.2vw,22px); margin:12px 0 6px}
+  .tag{display:inline-block; background:rgba(34,211,238,.15); border:1px solid rgba(34,211,238,.35); color:#cffafe; padding:4px 10px; border-radius:999px; font-size:12px; margin-right:6px}
+  .muted{color:#cbd5e1; opacity:.85}
+  .chips{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0}
+  .chip{padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.03); font-size:12px}
+  .list{margin:8px 0 0 0; padding:0 0 0 18px}
+  .list li{margin:6px 0}
+  .cols{columns:2; gap:22px}
+  @media (max-width:900px){ .cols{columns:1} }
+  .kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:14px}
+  .kpi{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:12px 14px}
+  .kpi .label{opacity:.8; font-size:12px}
+  .kpi .val{font-size:20px; font-weight:700}
+  .nav{position:absolute; inset:auto 0 16px 0; display:flex; justify-content:center; gap:12px;}
+  .btn{background:linear-gradient(180deg, rgba(34,211,238,.25), rgba(34,211,238,.15)); border:1px solid rgba(34,211,238,.45);
+       padding:10px 14px; border-radius:12px; color:#042f2e; font-weight:800; letter-spacing:.3px; cursor:pointer}
+  .btn:disabled{opacity:.5; cursor:not-allowed}
+  a{color:#7dd3fc}
+  .maplink{display:inline-flex; align-items:center; gap:6px}
+  .inline{display:inline-block}
+  .note{font-size:13px; opacity:.8}
+  .dayline{margin-top:10px; border-top:1px dashed rgba(255,255,255,.15); padding-top:10px}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+  <!-- S0: Cover -->
+  <section class="slide active" aria-label="表紙">
+    <div class="title">🧭 沖縄2泊3日 旅のしおり<br/>同期7名（男3・女4）</div>
+    <div class="subtitle">2025年11月8日(土) → 11月10日(月)｜テーマ：<span class="inline" style="color:var(--accent)">映える × 食べる × 作る</span></div>
+    <div class="kpis">
+      <div class="kpi"><div class="label">レンタカー 受取</div><div class="val">11/8(土) 12:00</div><div class="note maplink">📍 <a target="_blank" href="https://maps.google.com/?q=%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E4%B8%8A%E4%B9%8B%E5%B1%8B393-1">沖縄県那覇市上之屋393-1</a></div></div>
+      <div class="kpi"><div class="label">レンタカー 返却</div><div class="val">11/10(月) 17:00</div><div class="note">同上</div></div>
+      <div class="kpi"><div class="label">2泊目 ホテル</div><div class="val">国際通りエリア</div><div class="note"><a target="_blank" href="https://ryukyuorion.kenhotels.com/rooms/#room02">(参考) リンク</a></div></div>
+      <div class="kpi"><div class="label">参加人数</div><div class="val">7名</div><div class="note">大きめ車×1が◎</div></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h2>旅のハイライト</h2>
+        <div class="chips">
+          <span class="chip">美浜アメリカンビレッジ</span>
+          <span class="chip">琉球ガラス作り</span>
+          <span class="chip">島唄ライブ×居酒屋</span>
+          <span class="chip">国際通り・ウミカジテラス</span>
+          <span class="chip">沖縄そば／タコス／タコライス</span>
+        </div>
+        <p class="muted">“水族館ナシ” で移動少なめ・体験濃いめの同期旅にアップデート！</p>
+      </div>
+      <div class="card">
+        <h2>持ち物メモ</h2>
+        <ul class="list">
+          <li>薄手の羽織・雨具（急なスコール対策）</li>
+          <li>歩きやすい靴／サンダル・モバイルバッテリー</li>
+          <li>運転免許証（運転者）、サングラス／日焼け止め</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- S1: Day1 -->
+  <section class="slide" aria-label="1日目">
+    <h2>🌅 1日目｜11/8(土) 那覇 → 北谷（アメリカンビレッジ）</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>タイムライン</h3>
+        <ul class="list">
+          <li><b>12:00</b> レンタカー受取（<a target="_blank" href="https://maps.google.com/?q=%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E4%B8%8A%E4%B9%8B%E5%B1%8B393-1">MAP</a>）</li>
+          <li><b>13:00</b> 昼：<b>沖縄そば</b>（例：すーまぬめぇ／首里そば など）</li>
+          <li><b>15:00</b> <b>美浜アメリカンビレッジ</b>着（観覧車・海沿い散策・カフェ）</li>
+          <li><b>18:00</b> 夕食：アメリカンビレッジ内（タコス／ステーキ）</li>
+          <li><b>20:00</b> 北谷エリア泊（例：レクー北谷／ヒルトン北谷）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>食のおすすめ</h3>
+        <ul class="list">
+          <li>タコス：チャーリー多幸寿、Taco Loco</li>
+          <li>カフェ：ZHYVAGO COFFEE、ブルーシール</li>
+          <li>沖縄そば：すーまぬめぇ、首里そば</li>
+        </ul>
+        <div class="dayline note">那覇 → 北谷は車で約30〜40分。サンセット狙いで到着を。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S2: Day2 -->
+  <section class="slide" aria-label="2日目">
+    <h2>🧿 2日目｜11/9(日) 北谷 → ものづくり体験 → 那覇（国際通り）</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>午前：琉球ガラス体験</h3>
+        <p class="muted">吹きガラスで<b>グラス／皿づくり</b>（30〜45分・¥3,000〜5,000目安）</p>
+        <ul class="list">
+          <li><a target="_blank" href="https://www.ryukyu-glass.co.jp/">琉球ガラス村（糸満）</a>：体験・ショップ充実</li>
+          <li><a target="_blank" href="https://www.gala-aoiumi.com/">Gala青い海（読谷）</a>：海沿いリゾート複合・陶芸も</li>
+        </ul>
+        <p class="note">※作品は翌日受取 or 郵送可。7人は<b>事前予約</b>推奨。</p>
+      </div>
+      <div class="card">
+        <h3>午後：チョイス（天気×気分で）</h3>
+        <div class="cols">
+          <ul class="list">
+            <li>絶景：<b>残波岬</b>（断崖と灯台／映え）</li>
+            <li>歴史：<b>座喜味城跡</b>（世界遺産）</li>
+            <li>離島：<b>浜比嘉島</b>（橋で渡れる・カフェ）</li>
+          </ul>
+          <ul class="list">
+            <li>アクティビティ：<b>恩納村パラセーリング</b>（要予約／晴天時◎）</li>
+            <li>ランチ：<b>タコライス or カフェ</b>（移動途中で）</li>
+            <li>夕方：那覇へ移動 → 国際通りチェックイン</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <h3>夜：島唄ライブ × 居酒屋</h3>
+        <ul class="list">
+          <li>うたや なぎいち ／ 島唄居酒屋 ちょんちょん など</li>
+          <li>二次会：国際通りバー／カクテル</li>
+        </ul>
+        <p class="note">ライブは<b>時間帯・席数</b>に注意。週末は予約が安心。</p>
+      </div>
+      <div class="card">
+        <h3>2泊目：国際通りエリア</h3>
+        <p class="muted">アクセス良・夜も遊びやすい拠点</p>
+        <ul class="list">
+          <li>ホテル例：リンク（<a target="_blank" href="https://ryukyuorion.kenhotels.com/rooms/#room02">KEN ホテル 国際通り</a> 等）</li>
+          <li>買い物：お土産・雑貨・泡盛</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3: Day3 -->
+  <section class="slide" aria-label="3日目">
+    <h2>☀️ 3日目｜11/10(月) 那覇 → ウミカジテラス → 返却</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>タイムライン</h3>
+        <ul class="list">
+          <li><b>09:00</b> 朝カフェ（C&C BREAKFAST など）</li>
+          <li><b>11:00</b> 国際通りでお土産タイム</li>
+          <li><b>13:00</b> <b>瀬長島ウミカジテラス</b>（海を見てチル）</li>
+          <li><b>15:30</b> 那覇市内へ戻る／最終買い物</li>
+          <li><b>17:00</b> レンタカー返却（上之屋393-1）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>食の〆候補</h3>
+        <ul class="list">
+          <li>沖縄そば：金月そば／波布食堂</li>
+          <li>スイーツ：紅いもソフト、ブルーシール</li>
+        </ul>
+        <p class="note">フライト時間に応じて前後調整OK。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4: Logistics & Tips -->
+  <section class="slide" aria-label="Tips">
+    <h2>📎 ロジ＆TIPS（7名旅のコツ）</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>交通・駐車</h3>
+        <ul class="list">
+          <li>週末は渋滞しやすい時間帯あり。<b>出発30分前倒し</b>で余裕を。</li>
+          <li>北谷・国際通りは<b>コインP</b>多数。ホテルPは事前確認。</li>
+          <li>車は<b>7〜8名乗り</b>クラス推奨。荷物スペースも考慮。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>予約の優先度</h3>
+        <ul class="list">
+          <li>琉球ガラス：<b>体験予約</b>（7人枠）</li>
+          <li>島唄ライブ：<b>夜の席予約</b>（時間帯確認）</li>
+          <li>1泊目ホテル：<b>北谷エリア</b>で確保すると動線◎</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>食のミッション（達成チェック）</h3>
+        <div class="chips">
+          <span class="chip">✅ 沖縄そば</span>
+          <span class="chip">✅ ソーキそば</span>
+          <span class="chip">✅ タコス</span>
+          <span class="chip">✅ タコライス</span>
+          <span class="chip">✅ ステーキ</span>
+        </div>
+        <p class="note">混雑時は2グループ分散→合流が早い。</p>
+      </div>
+      <div class="card">
+        <h3>共有リンク（任意）</h3>
+        <ul class="list">
+          <li>2泊目参考：<a target="_blank" href="https://ryukyuorion.kenhotels.com/rooms/#room02">国際通りエリアホテル</a></li>
+          <li>琉球ガラス村：<a target="_blank" href="https://www.ryukyu-glass.co.jp/">公式</a></li>
+          <li>Gala青い海：<a target="_blank" href="https://www.gala-aoiumi.com/">公式</a></li>
+          <li>美浜アメリカンビレッジ（MAP検索）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Controls -->
+  <div class="nav">
+    <button class="btn" id="prev">◀︎ 前へ</button>
+    <button class="btn" id="next">次へ ▶︎</button>
+  </div>
+</div>
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let idx = 0;
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  function render(){
+    slides.forEach((s,i)=> s.classList.toggle('active', i===idx));
+    prev.disabled = idx===0; next.disabled = idx===slides.length-1;
+  }
+  prev.addEventListener('click', ()=>{ idx=Math.max(0, idx-1); render(); });
+  next.addEventListener('click', ()=>{ idx=Math.min(slides.length-1, idx+1); render(); });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key==='ArrowRight' || e.key==='PageDown') { idx=Math.min(slides.length-1, idx+1); render(); }
+    if(e.key==='ArrowLeft'  || e.key==='PageUp')   { idx=Math.max(0, idx-1); render(); }
+  });
+  // swipe for mobile
+  let sx=null;
+  document.addEventListener('touchstart', e=>{ sx=e.changedTouches[0].clientX; });
+  document.addEventListener('touchend', e=>{
+    if(sx==null) return; const dx=e.changedTouches[0].clientX - sx; sx=null;
+    if(Math.abs(dx)>40){ idx = dx<0? Math.min(slides.length-1, idx+1) : Math.max(0, idx-1); render(); }
+  });
+</script>
+</body>
+</html>
