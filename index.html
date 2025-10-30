@@ -5,16 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>同期旅・沖縄2泊3日 旅のしおり（女3・男3）</title>
 <style>
-  /* ===== Theme (Light but keeps original layout) ===== */
   :root{
-    --bg:#f7fbff;           /* light background */
-    --card:#ffffff;          /* card surface */
-    --text:#0f172a;          /* slate-900 */
-    --muted:#64748b;         /* slate-500 */
-    --accent:#0ea5e9;        /* sky-500 */
-    --accent2:#6366f1;       /* indigo-500 */
-    --border:#e2e8f0;        /* cool-gray-200 */
-    --chip:#eef2ff;          /* indigo-50 */
+    --bg:#f7fbff; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+    --accent:#0ea5e9; --accent2:#6366f1; --border:#e2e8f0; --chip:#eef2ff;
   }
   html,body{height:100%;margin:0;background:var(--bg);color:var(--text);
     font-family:"Hiragino Kaku Gothic ProN","Noto Sans JP",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji"}
@@ -40,21 +33,16 @@
   .nav{position:fixed;inset:auto 0 12px;display:flex;justify-content:center;gap:12px;z-index:10}
   .btn{background:linear-gradient(180deg,#38bdf866,#38bdf844);border:1px solid #38bdf8aa;padding:10px 14px;border-radius:12px;color:#083344;font-weight:800;letter-spacing:.2px;cursor:pointer;box-shadow:0 4px 10px rgba(2,132,199,.15)}
   .btn:disabled{opacity:.55;cursor:not-allowed}
-  /* Media (smartphone) */
   @media (max-width:640px){
     .slide{padding:40px 4vw 100px}
-    h1{font-size:22px}
-    h2{font-size:18px}
-    h3{font-size:16px}
+    h1{font-size:22px} h2{font-size:18px} h3{font-size:16px}
   }
-  /* Image thumbnails */
   .thumb{width:100%;max-height:210px;object-fit:cover;border-radius:14px;margin:10px 0}
-  .icon{font-style:normal;margin-right:6px}
 </style>
 </head>
 <body>
 <div class="deck" id="deck">
-  <!-- Cover (content preserved) -->
+  <!-- Cover -->
   <section class="slide active" aria-label="表紙">
     <h1>🧭 同期旅・沖縄 2泊3日 旅のしおり（女3・男3）</h1>
     <p>期間：2025年11月8日(土) → 11月10日(月) ／ テーマ：<b style="color:var(--accent)">映える × 食べる × 作る × 見る</b></p>
@@ -62,145 +50,156 @@
       <div class="kpi"><div class="label">参加</div><div class="val">6名（女3・男3）</div><div class="note">🚙 8人乗りで余裕あり</div></div>
       <div class="kpi"><div class="label">レンタカー受取</div><div class="val">11/8(土) 12:00</div><div class="note">📍 <a target="_blank" href="https://maps.google.com/?q=%E6%B2%96%E7%B8%84%E7%9C%8C%E9%82%A3%E8%A6%87%E5%B8%82%E4%B8%8A%E4%B9%8B%E5%B1%8B393-1">那覇市上之屋393-1</a></div></div>
       <div class="kpi"><div class="label">レンタカー返却</div><div class="val">11/10(月) 17:00</div><div class="note">同上</div></div>
-      <div class="kpi"><div class="label">宿泊</div><div class="val">1泊目：Airbnb ／ 2泊目：国際通り</div><div class="note">🐠 美ら海水族館 追加済み</div></div>
+      <div class="kpi"><div class="label">宿泊</div><div class="val">1泊目：Airbnb ／ 2泊目：国際通り</div><div class="note">🐠 美ら海水族館 追加</div></div>
     </div>
+
     <div class="grid">
+      <div class="card">
+        <h2>フライト</h2>
+        <ul>
+          <li><b>11/8(土)</b> ✈️ 羽田 <b>8:10</b> → 那覇 <b>11:00</b></li>
+          <li><b>11/10(月)</b> ✈️ 那覇 <b>20:05</b> → 羽田 <b>22:15</b></li>
+        </ul>
+      </div>
+
       <div class="card">
         <h2>宿情報</h2>
         <ul>
-          <li><b>1泊目：Airbnb（本部町・プールヴィラ）</b> — 【プールヴィラ】BBQ設備＆プライベートプール付き（サウナ無し）／エリア：本部町（Kunigami District）<br>
+          <li><b>1泊目：Airbnb（本部町・プールヴィラ）</b> — 【プールヴィラ】BBQ設備＆プライベートプール付き（サウナ無し）／エリア：本部町<br>
             ・特徴：<span class="note">プライベートプール・BBQ設備・ヴィラタイプ</span><br>
             ・住所：<span class="note">正確な住所は予約後にAirbnbアプリで開示</span><br>
-            ・リンク：<a target="_blank" href="https://www.airbnb.jp/rooms/1299059180554813488?adults=6&check_in=2025-11-09&check_out=2025-11-10">Airbnb掲載ページ</a>
+            ・リンク：<a target="_blank" href="https://www.airbnb.jp/rooms/1299059180554813488?adults=6&check_in=2025-11-09&check_out=2025-11-10&source_impression_id=p3_1761656656_P3TtcwDQlb6nsO2G&modal=PHOTO_TOUR_SCROLLABLE">Airbnb掲載ページ</a>
           </li>
           <li><b>2泊目：琉球オリオンホテル 那覇国際通り</b> — 〒902-0067 沖縄県那覇市安里1丁目2番21号（牧志駅 徒歩3分）<br>
             ・駐車場：第1（地下）33台／第2（平面）29台 <span class="note">1,500円/泊・提携Pあり</span><br>
-            ・客室設備例：Simmonsベッド、USB充電（A/Type‑C）、空気清浄機 など<br>
+            ・客室設備例：Simmonsベッド、USB充電（A/Type-C）、空気清浄機 など<br>
             ・リンク：<a target="_blank" href="https://ryukyuorion.kenhotels.com/rooms/">客室一覧</a> / <a target="_blank" href="https://ryukyuorion.kenhotels.com/access/">アクセス</a>
           </li>
         </ul>
-        <p class="note">※ Airbnbは概要のみ記載（正確な住所・チェックイン方法はホスト案内を参照）。ホテル情報は公式サイト基づき抜粋。</p>
+        <p class="note">※ Airbnbは住所・チェックイン手順が予約後開示。ホテル情報は公式サイトより抜粋。</p>
         <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Chatan_American_Village.jpg" alt="美浜アメリカンビレッジ">
       </div>
+
       <div class="card">
         <h2>旅のハイライト</h2>
         <div class="chips">
-          <span class="chip">🏙 美浜アメリカンビレッジ</span>
-          <span class="chip">🫧 琉球ガラス（吹きガラス）</span>
-          <span class="chip">🎶 島唄ライブ×居酒屋</span>
-          <span class="chip">🛍 国際通り・ウミカジテラス</span>
-          <span class="chip">🍜 沖縄そば／🌮 タコス／🍚 タコライス</span>
+          <span class="chip">🏝 古宇利島（ハートロック）</span>
+          <span class="chip">🐠 美ら海水族館</span>
+          <span class="chip">🛶 マングローブカヤック（金武町）</span>
+          <span class="chip">🎶 民謡ライブ わらゆい</span>
+          <span class="chip">🛍 国際通り・ウミカジ</span>
+          <span class="chip">🍜 そば／🌮 タコス／🍚 タコライス</span>
         </div>
         <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Chatan_Sunset_Beach.jpg" alt="サンセットビーチ">
       </div>
     </div>
   </section>
 
-  <!-- Day1 (content preserved, icons + photo added) -->
+  <!-- Day1 -->
   <section class="slide" aria-label="1日目">
-    <h2>🌅 1日目｜11/8(土) 那覇 → 北谷（美浜アメリカンビレッジ）</h2>
+    <h2>🌅 1日目｜11/8(土) 羽田→那覇 → 本部（Airbnb）</h2>
     <div class="grid">
       <div class="card">
         <h3>タイムライン</h3>
         <ul>
-          <li><b>12:00</b> 🚗 レンタカー受取（上之屋393-1）</li>
-          <li><b>13:00</b> 🍜 <b>沖縄そば／ソーキそば</b>（首里そば / すーまぬめぇ）</li>
-          <li><b>15:00</b> 🏙 <b>美浜アメリカンビレッジ</b>（散策・カフェ・タコス）</li>
-          <li><b>18:00</b> 🌇 サンセットビーチで写真📸</li>
-          <li><b>夜</b> 🛒 Airbnb近隣で買い出し→団欒 or 外食</li>
+          <li><b>8:10</b> ✈️ 羽田空港 発</li>
+          <li><b>11:00</b> ✈️ 那覇空港 着</li>
+          <li><b>12:00</b> 🚗 レンタカー利用開始（上之屋393-1）<span class="note">Airbnbまで約1時間30分</span></li>
+          <li><b>15:00</b> 🏡 Airbnb（本部町・プールヴィラ）チェックイン<br>
+            <a target="_blank" href="https://www.airbnb.jp/rooms/1299059180554813488?adults=6&check_in=2025-11-09&check_out=2025-11-10&source_impression_id=p3_1761656656_P3TtcwDQlb6nsO2G&modal=PHOTO_TOUR_SCROLLABLE">宿ページ</a></li>
+          <li><b>午後</b> 🏝 古宇利島ドライブ（ハートロック＋穴場ビーチ）<br>
+            <a target="_blank" href="https://maps.app.goo.gl/BF9BxpVe79zFacEd7?g_st=ipc">スポット①</a> ／
+            <a target="_blank" href="https://maps.app.goo.gl/ZHSa1R5e9G3Tj3926?g_st=ipc">スポット②</a>
+            <div class="note">エアビから車で約30分</div>
+          </li>
+          <li><b>18:00</b> 🐷 ちゃんやー（あぐー豚・居酒屋）<br>
+            <a target="_blank" href="https://maps.app.goo.gl/B18fFA4TAsZL4t9u8?g_st=al">地図</a> <span class="chip">ToDo：予約</span></li>
         </ul>
-        <p class="note">那覇→北谷は約30〜40分。サンセットの時間に合わせて移動。</p>
       </div>
       <div class="card">
-        <h3>グルメ候補</h3>
+        <h3>メモ</h3>
         <ul>
-          <li>🌮 タコス：チャーリー多幸寿 / Taco Loco</li>
-          <li>☕ カフェ：ZHYVAGO COFFEE / ブルーシール</li>
-          <li>🥡 夜食：テイクアウト＋Airbnbチルも◎</li>
+          <li>買い出し：BBQ食材＆朝食分</li>
+          <li>シャワー・着替え用にタオル多め推奨</li>
         </ul>
-        <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Okinawa_taco_rice.jpg" alt="タコライス">
-      </div>
-      <div class="card">
-        <h3>宿泊</h3>
-        <ul>
-          <li>1泊目：<a target="_blank" href="https://www.airbnb.jp/rooms/1299059180554813488?adults=6&check_in=2025-11-09&check_out=2025-11-10">Airbnb（本部町・プール＆BBQ付ヴィラ）</a></li>
-        </ul>
-        <p class="note">住所は予約後に開示。駐車台数・チェックイン方法はホスト案内を確認。</p>
         <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Barbecue_grill.jpg" alt="BBQイメージ">
       </div>
     </div>
   </section>
 
-  <!-- Day2 (added Churaumi section without removing content) -->
+  <!-- Day2 -->
   <section class="slide" aria-label="2日目">
-    <h2>🐠 2日目｜11/9(日) 美ら海水族館 → 琉球ガラス体験 → 国際通り</h2>
+    <h2>🐠 2日目｜11/9(日) 美ら海水族館 → マングローブカヤック → 国際通り</h2>
     <div class="grid">
       <div class="card">
-        <h3>午前：美ら海水族館</h3>
+        <h3>午前：美ら海水族館（本部）</h3>
         <ul>
-          <li>🦈 ジンベエザメ・イルカショー・深海ゾーンなど</li>
-          <li>⏱ 所要：約2〜3時間 ／ 💴 大人¥2,180</li>
-          <li>🚘 アクセス：Airbnbから約15分</li>
-          <li>🔗 <a target="_blank" href="https://churaumi.okinawa/">公式サイト</a></li>
+          <li><b>9:00</b> 出発（チェックアウト）</li>
+          <li><b>9:10</b> 入館：沖縄県国頭郡本部町石川424</li>
+          <li class="note">所要 約2〜3h／大人¥2,180</li>
+          <li><a target="_blank" href="https://churaumi.okinawa/">公式サイト</a></li>
         </ul>
         <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Okinawa_Churaumi_Aquarium_Main_Tank.jpg" alt="美ら海水族館 大水槽">
       </div>
+
       <div class="card">
-        <h3>午後：琉球ガラス体験</h3>
-        <p class="note">吹きガラスで<b>グラス／皿</b>を制作（30〜45分 / 3,000〜5,000円）／作品は翌日受取または郵送</p>
+        <h3>午後：マングローブカヤック（金武町）</h3>
         <ul>
-          <li><a target="_blank" href="https://www.ryukyu-glass.co.jp/">琉球ガラス村（糸満）</a></li>
-          <li><a target="_blank" href="https://www.gala-aoiumi.com/">Gala青い海（読谷）</a></li>
+          <li>🕑 集合 <b>14:00</b>（所要 約2h）</li>
+          <li>📍 沖縄県国頭郡金武町金武11818-2</li>
+          <li>🔗 予約：<a target="_blank" href="https://activityjapan.com/publish/plan/7463?selectdate=2025/11/09">Activity Japan プラン</a></li>
         </ul>
-        <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Ryukyu_glass.jpg" alt="琉球ガラス">
+        <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Mangrove_kayak.jpg" alt="マングローブカヤック">
       </div>
-      <div class="card">
-        <h3>夜：島唄ライブ × 居酒屋</h3>
-        <ul>
-          <li>🎶 うたや なぎいち ／ 島唄居酒屋 ちょんちょん</li>
-        </ul>
-        <p class="note">週末は予約が安心。ライブ時間帯を事前確認。</p>
-        <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Shima_uta_Live.jpg" alt="島唄ライブ">
-      </div>
+
       <div class="card">
         <h3>2泊目：琉球オリオンホテル 那覇国際通り</h3>
         <ul>
-          <li>🏨 住所：〒902-0067 沖縄県那覇市安里1丁目2番21号（ゆいレール牧志駅 徒歩3分）</li>
-          <li>🅿️ 駐車：地下33台・平面29台（目安1,500円/泊）／向かい提携Pあり</li>
-          <li>🛏 客室：ツイン〜デラックスツイン（Simmons・USB A/Type‑C 等）</li>
-          <li>🔗 公式：<a target="_blank" href="https://ryukyuorion.kenhotels.com/rooms/">客室</a> / <a target="_blank" href="https://ryukyuorion.kenhotels.com/access/">アクセス</a></li>
+          <li>🏨 <b>16:30</b> チェックイン</li>
+          <li>住所：〒902-0067 那覇市安里1-2-21（牧志駅 徒歩3分）</li>
+          <li>🅿️ 地下33台・平面29台（目安1,500円/泊）</li>
+          <li><a target="_blank" href="https://ryukyuorion.kenhotels.com/rooms/">客室</a> / <a target="_blank" href="https://ryukyuorion.kenhotels.com/access/">アクセス</a></li>
         </ul>
         <img class="thumb" loading="lazy" src="https://ryukyuorion.kenhotels.com/images/top/slide01.jpg" alt="琉球オリオンホテル">
+      </div>
+
+      <div class="card">
+        <h3>夜：民謡ライブ＆沖縄料理</h3>
+        <ul>
+          <li><b>17:30</b> 民謡ライブ 沖縄料理 居酒屋 <a target="_blank" href="https://warayui.owst.jp/">わらゆい</a></li>
+          <li class="note">飲む人は続行、戻る人はホテルへ</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Day3 (content preserved + photo) -->
+  <!-- Day3 -->
   <section class="slide" aria-label="3日目">
-    <h2>☀️ 3日目｜11/10(月) 那覇 → ウミカジテラス → 返却</h2>
+    <h2>☀️ 3日目｜11/10(月) 那覇 → ウミカジ or 周辺 → 返却 → 羽田</h2>
     <div class="grid">
       <div class="card">
         <h3>タイムライン</h3>
         <ul>
-          <li><b>09:00</b> 🍽 朝カフェ（C&C BREAKFAST など）</li>
-          <li><b>11:00</b> 🛍 国際通りでお土産タイム</li>
-          <li><b>13:00</b> 🌊 <b>瀬長島ウミカジテラス</b>（海沿いでチル）</li>
-          <li><b>15:30</b> ☕ 那覇市内へ戻る／最終買い物</li>
+          <li><b>9:00</b> 出発（チェックアウト）</li>
+          <li class="note">※ 行き先候補を見ながら柔軟に動く</li>
           <li><b>17:00</b> 🚗 レンタカー返却（上之屋393-1）</li>
+          <li><b>20:05</b> ✈️ 那覇空港 発</li>
+          <li><b>22:15</b> ✈️ 羽田空港 着</li>
         </ul>
-        <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Senagajima_Umukaji_Terrace.jpg" alt="瀬長島ウミカジテラス">
       </div>
       <div class="card">
-        <h3>食の〆候補</h3>
+        <h3>行き先候補（当日調整）</h3>
         <ul>
-          <li>🍜 沖縄そば：金月そば / 波布食堂</li>
-          <li>🍠 スイーツ：紅いもソフト / ブルーシール</li>
+          <li>🫧 琉球ガラス村（糸満）</li>
+          <li>🌿 ガンガラーの谷（南城）</li>
+          <li>🌊 瀬長島ウミカジテラス（チル＆買い物）</li>
         </ul>
+        <img class="thumb" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Senagajima_Umukaji_Terrace.jpg" alt="瀬長島ウミカジテラス">
       </div>
     </div>
   </section>
 
-  <!-- Tips (unchanged + icons) -->
+  <!-- Tips -->
   <section class="slide" aria-label="Tips">
     <h2>📎 ロジ＆TIPS（6名旅のコツ）</h2>
     <div class="grid">
@@ -209,15 +208,15 @@
         <ul>
           <li>🚙 8人乗りに<b>6名乗車</b>で快適。荷物はトランク優先。</li>
           <li>⏰ 出発は30分前倒しで渋滞吸収。</li>
-          <li>🅿️ 北谷・国際通りはコインP多数。ホテルP要確認。</li>
+          <li>🅿️ 国際通りはコインP多数。ホテルP要確認。</li>
         </ul>
       </div>
       <div class="card">
-        <h3>予約の優先度</h3>
+        <h3>予約の優先度(未予約)</h3>
         <ul>
-          <li>🫧 琉球ガラス体験：<b>6名枠</b>で予約</li>
-          <li>🎶 島唄ライブ居酒屋：時間帯と席の確保</li>
-          <li>🏡 Airbnb：駐車可否・チェックイン手順</li>
+          <li>🏡 Airbnb：チェックイン手順・駐車可否</li>
+          <li>🍽 ちゃんやー：<b>予約</b>（18:00）</li>
+          <li>ガラス工房：<b>予約</b></li>
         </ul>
       </div>
       <div class="card">
@@ -228,19 +227,16 @@
           <span class="chip">✅ タコライス</span>
           <span class="chip">✅ ステーキ</span>
         </div>
-        <p class="note">混雑時は2テーブル分散→合流が早い。</p>
       </div>
     </div>
   </section>
 
-  <!-- Controls -->
   <div class="nav">
     <button class="btn" id="prev">◀︎ 前へ</button>
     <button class="btn" id="next">次へ ▶︎</button>
   </div>
 </div>
 <script>
-  // keep original controls + improve for mobile
   const slides=[...document.querySelectorAll('.slide')];
   let idx=0; const prev=document.getElementById('prev'); const next=document.getElementById('next');
   function render(){slides.forEach((s,i)=>s.classList.toggle('active',i===idx)); prev.disabled=idx===0; next.disabled=idx===slides.length-1}
@@ -250,9 +246,9 @@
     if(['ArrowRight','PageDown'].includes(e.key)){ idx=Math.min(slides.length-1,idx+1); render(); }
     if(['ArrowLeft','PageUp'].includes(e.key)){ idx=Math.max(0,idx-1); render(); }
   });
-  // touch swipe
   let sx=null; document.addEventListener('touchstart',e=>{ sx=e.changedTouches[0].clientX; });
   document.addEventListener('touchend',e=>{ if(sx==null) return; const dx=e.changedTouches[0].clientX-sx; sx=null; if(Math.abs(dx)>40){ idx = dx<0? Math.min(slides.length-1,idx+1):Math.max(0,idx-1); render(); } });
+  render();
 </script>
 </body>
 </html>
